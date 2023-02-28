@@ -2650,7 +2650,7 @@ body.lock {
     display: flex;
     column-gap: 50px;
     margin-bottom: 60px;
-    margin-left: 15px;
+    margin-left: 554px;
   }
   .catalog_slider {
     margin-top: 17px;
@@ -3347,7 +3347,6 @@ body.lock {
   .swiper-wrapper {
     display: flex;
     width: 100%;
-    margin-left: 220px;
   }
   .catalog_slider {
     position: relative;
@@ -3522,14 +3521,16 @@ body.lock {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    align-items: center;
   }
   .catalog_item {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 50px 20px 20px 20px;
     background: #FAF8F6;
     height: 405px;
-    max-width: 280px;
+    width: 280px;
     position: relative;
   }
   ._catalog-item-showMore {
@@ -3686,6 +3687,8 @@ body.lock {
   .blue_img {
     position: relative;
     order: 1;
+    display: flex;
+    justify-content: center;
   }
   .blue_img img {
     object-fit: cover;
