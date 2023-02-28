@@ -15,12 +15,13 @@
            <a href="landing.html"><img src="images/header-logo.svg" alt="logo" class="progressing-logo"></a>
            <a class="_progressing_mob-logo mobile_header-logo" href="landing.html"><img src="images/mobile-header-logo.svg" alt="logo"></a>
         </div>
-        <div class="progressing_order-body">
+        <form class="progressing_order-body">
             <h2 class="progressing_order-mainTitle">Delivery Information</h2>
             <div class="progressing_order-inputsContainer">
                 <div class="progressing_inputWrapper">
                     <span class="progressing_textLabel">First Name</span>
-                    <input type="text" class="progressing_input-input">
+                    <input type="text" class="progressing_input-input" required>
+                    <span class="progressing_textLabel _red">Required</span>
                 </div>
                 <div class="progressing_inputWrapper">
                     <span class="progressing_textLabel">Address Line 1</span>
@@ -144,7 +145,7 @@
                         <span class="_bold card-discountInfo-rowTitle">Today’s Total:</span>
                         <span class="_bold card-discountInfo-rowSum">$129.66</span>
                     </div>
-                    <a href="#" class="card-discount_totalLink">Place order</a>
+                    <a href="orderSuccess.html" class="card-discount_totalLink">Place order</a>
                 </div>
             </div>
             <div class="biling_container">
@@ -164,9 +165,10 @@
                         <input type="number" class="progressing_input-input" placeholder="CVC">
                     </div>
                     </div>
-                    <a href="#" class="card-discount_totalLink _placeOrder">Place order</a>
+                    <a href="orderSuccess.html" class="card-discount_totalLink _placeOrder">Place order</a>
             </div>
-        </div>
+        </form>
+
         <div class="progressing_order-footer">
            <div class="progressing_footer-info">
             <span class="progressing_footer-text">Return Policy</span>

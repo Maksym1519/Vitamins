@@ -11,15 +11,16 @@
 </head>
 <body>
     <div class="vitaminCard_wrapper">
-        <div class="_header-z header_container"><header>
+        <div class="_header-z header_container"><div class="header_body">
+<header>
     <div class="headerWhite_wrapper">
       <div class="headerWhite_logo-wrapper">
            <a href="landing.html" class="white"><img src="images/white-logo.svg" alt="logo"></a>
       </div>
       <div class="header_nav">
-          <img src="images/header-manIcon.svg" alt="icon">
+          <a href="profile.html"><img src="images/header-manIcon.svg" alt="icon"></a>
           <img src="images/header-bagOrange.svg" alt="icon">
-          <a href="#" class="header_link">Take the quiz</a>
+          <a href="quiz1.html" class="header_link">Take the quiz</a>
       </div>
     </div> 
   </header>
@@ -31,7 +32,141 @@
         <a href="landing.html" class="white"><img src="images/white-logo.svg" alt="logo"></a>
       <img src="images/bag-white.svg" alt="icon">
     </div>
-  </header></div>
+  </header>
+  <!------------------------------------------------------------------->
+  <header class="mobile-header-nav">
+    <div class="header">
+      <div class="close">
+        <span class="line"></span>
+      </div>
+      <img src="images/Profile.svg" alt="logo" class="icon">
+    </div>
+   <div class="container">
+    <div class="item_menu _itemMenu-shop">
+        <a href="catalog.html" class="link">Shop</a>
+        <img src="images/menu-arrow-right.svg" alt="img" class="arrow">
+    </div>
+    <div class="item_menu _itemMenu-info">
+        <a href="textPattern.html" class="link">Information</a>
+        <img src="images/menu-arrow-right.svg" alt="img" class="arrow">
+    </div>
+    <div class="item_menu _itemMenu-profile">
+        <a href="profile.html" class="link">Profile</a>
+        <img src="images/menu-arrow-right.svg" alt="img" class="arrow">
+    </div>
+    <div class="item_menu">
+        <a href="quiz1.html" class="link _redColor">Take the quiz</a>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="text">support@medstogo.com</span>
+    <span class="text _text2">© 2020 Vitamins.com / All rights reserved</span>
+  </div>
+  </header>
+<!--shop----------------------------------------------------------------------->
+<header class="shop_navigation">
+  <div class="header _shop_header">
+    <img src="images/arrow-left-mob.svg" alt="arrow" class="arrow">
+    <h2 class="title">Shop</h2>
+  </div>
+  <ul class="shop_nav-list">
+    <li class="item_menu"><a href="catalog.html" class="_link">All categories</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Vitamins & Dietary Supplements</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Weight Loss</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Minerals</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Antioxidants</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Probiotics</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Pain Relief</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link">Prenatal Vitamins</a></li>
+    <li class="item_menu"><a href="catalog.html" class="_link _redColor">Sale%</a></li>
+  </ul>
+  <div class="footer">
+    <h3 class="subTitle">Don’t know what vitamins your body needs?</h3>
+    <p class="text">Answer a few simple questions and automatically
+      get a personalazed list of vitamins in minutes</p>
+      <a href="quiz1.html" class="link">Take the quiz</a>
+  </div>
+</header>
+<!-------------------------------------------------------------------------->
+<div class="information_navigation">
+  <div class="header _infoHeader">
+    <img src="images/arrow-left-mob.svg" alt="arrow" class="arrow">
+    <h2 class="title">Information</h2>
+  </div>
+  <ul class="shop_nav-list">
+    <li class="item_menu"><a href="landing.html" class="_link">Subscription Cycle & Billing</a></li>
+    <li class="item_menu"><a href="landing.html" class="_link">Terms & Conditions</a></li>
+    <li class="item_menu"><a href="landing.html" class="_link">Privacy Policy</a></li>
+    <li class="item_menu"><a href="landing.html" class="_link">Shipping & Delivery</a></li>
+    <li class="item_menu"><a href="landing.html" class="_link">Return Policy</a></li>
+    </ul>
+  </div>
+  <div class="profile_navigation">
+    <div class="header _profileHeader">
+      <img src="images/arrow-left-mob.svg" alt="arrow" class="arrow">
+      <h2 class="title">Profile</h2>
+    </div>
+    <ul class="shop_nav-list">
+      <li class="item_menu"><a href="profile.html" class="_link">Subscriptions</a></li>
+      <li class="item_menu"><a href="profileOrder.html" class="_link">Orders</a></li>
+      <li class="item_menu"><a href="profile.html" class="_link">Account Overview</a></li>
+      <li class="item_menu"><a href="pageNotFound.html" class="_link">Payment methods</a></li>
+      <li class="item_menu"><a href="recoveryPassword.html" class="_link">Change Password</a></li>
+      <li class="item_menu"><a href="pageNotFound.html" class="_link _redColor">Sign Out</a></li>
+      </ul>
+    </div>
+</div>
+<script>
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.mobile-header-nav');
+  const mobHeader = document.querySelector('.mobile-header');
+  const closse = document.querySelector('.close');
+  const shopMenu = document.querySelector('.shop_navigation');
+  const itemShop = document.querySelector('._itemMenu-shop');
+  const shopClose = document.querySelector('._shop_header');
+  const infoMenu = document.querySelector('.information_navigation');
+  const itemInfo = document.querySelector('._itemMenu-info');
+  const infoClose = document.querySelector('._infoHeader');
+  const itemProfile = document.querySelector ('._itemMenu-profile');
+  const profileMenu = document.querySelector('.profile_navigation');
+  const profileClose = document.querySelector('._profileHeader');
+  burger.addEventListener('click', () => {
+    mobHeader.style.display = 'none';
+    menu.style.display = 'flex';
+       });
+     </script>
+     <script>
+      closse.addEventListener('click', () => {
+      menu.style.display = 'none';
+      mobHeader.style.display = 'flex';
+     });
+     itemShop.addEventListener('click', () => {
+      menu.style.display = 'none';
+      shopMenu.style.display = 'flex';
+     });
+     shopClose.addEventListener('click', () => {
+      shopMenu.style.display = 'none';
+      menu.style.display = 'flex';
+     });
+     itemInfo.addEventListener('click', () => {
+      menu.style.display = 'none';
+      infoMenu.style.display = 'flex';
+     });
+     infoClose.addEventListener('click', () => {
+      infoMenu.style.display = 'none';
+      menu.style.display = 'flex';
+     });
+     itemProfile.addEventListener('click', () => {
+      menu.style.display = 'none';
+      profileMenu.style.display = 'flex';
+     });
+     profileClose.addEventListener('click', () => {
+      profileMenu.style.display = 'none';
+      menu.style.display = 'flex';
+     })
+    
+     </script>
+</div>
             <div class="card_body">
                
             <div class="card_body-img">
@@ -166,7 +301,7 @@
         <footer>
     <div class="footer_wrapper">
         <div class="footer_logo-container">
-            <img src="images/footer-logo.svg" alt="logo" class="footer-logo">
+            <a href="landing.html"><img src="images/footer-logo.svg" alt="logo" class="footer-logo"></a>
             <span class="footer_logo-text">© 2020 Vitamins.com / All rights reserved</span>
         </div>
         <ul class="footer_list">
@@ -201,6 +336,82 @@
         </ul>
     </div>
 </footer>
+        <!--insert from cart--------------------------------------------------->
+        <div class="cart_body">
+            <div class="cart_header">
+                <h3 class="cart_header-title">Cart</h3>
+                <div class="cart_header-close">
+                   <span class="cart_header-lineClose"></span>
+                </div>
+            </div>
+            <div class="cart_item-container">
+                <div class="cart_item">
+                    <img src="images/cart-item1.webp" alt="img" class="cart_item_img">
+                    <img src="images/cartItem-img1375.webp" alt="img" class="cart_item_img375">
+                    <div class="cart_item_description">
+                        <h3 class="cart_item-title">Ortho Molecular Products CereVive Capsules</h3>
+                        <div class="order-number-plus _cart_item-counter">
+                            <button class="number-adjust _cart-counter _number-plus">-</button>
+                            <span class="number-plus-value">1</span>
+                            <button class="number-adjust _cart-counter _number-minus">+</button>
+                            <span class="counter_sum">$84.00</span>
+                        </div>
+                        <!--insert from discountGood-->
+                        <div class="deliveryDayChoose _cartItem-deliveryDayChoose">
+                            <div class="cart_item-inputWrapper"><input type=" radio" class="cartItem_chooseDays" id="dayChoose">
+                            <label for="dayChoose" class="label_days"></label></div>
+                            <p class="dayChoose-text">Autoship this item every</p>
+                            <p class="dayChoose-mobText _cart-textFontSize">Autoship every</p>
+                            <ul class="dayChoose-list _cartItem-chooseList">
+                                <li class="dayChoose-listDefault _cartItem-dayDefault">30</li>
+                                <li class="dayChoose-item">29</li>
+                                <li class="dayChoose-item">28</li>
+                                <li class="dayChoose-item">27</li>
+                            </ul>
+                            <span class="days">days</span>
+                        </div>
+                    </div>
+                    <div class="cart_header-close _item-close">
+                        <span class="cart_header-lineClose _item-closeLine"></span>
+                     </div>
+                </div>
+                <!--item2------------------------------------------------->
+                <div class="cart_item">
+                    <img src="images/cart-item2.webp" alt="img" class="cart_item_img">
+                    <img src="images/cartItem-img2375.webp" alt="img" class="cart_item_img375">
+                    <div class="cart_item_description">
+                        <h3 class="cart_item-title">Standard Process Thymus PMG 90 Tablets</h3>
+                        <div class="order-number-plus _cart_item-counter">
+                            <button class="number-adjust _cart-counter _number-plus">-</button>
+                            <span class="number-plus-value">3</span>
+                            <button class="number-adjust _cart-counter _number-minus">+</button>
+                            <span class="counter_sum">$84.00</span>
+                        </div>
+                        <!--insert from discountGood-->
+                        <div class="deliveryDayChoose _cartItem-deliveryDayChoose">
+                            <div class="cart_item-inputWrapper"><input type=" radio" class="cartItem_chooseDays" id="dayChoose">
+                            <label for="dayChoose" class="label_days"></label></div>
+                            <p class="dayChoose-text">Autoship this item every</p>
+                            <p class="dayChoose-mobText _cart-textFontSize">Autoship every</p>
+                            <ul class="dayChoose-list _cartItem-chooseList">
+                                <li class="dayChoose-listDefault _cartItem-dayDefault">30</li>
+                                <li class="dayChoose-item">29</li>
+                                <li class="dayChoose-item">28</li>
+                                <li class="dayChoose-item">27</li>
+                            </ul>
+                            <span class="days">days</span>
+                        </div>
+                    </div>
+                    <div class="cart_header-close _item-close">
+                        <span class="cart_header-lineClose _item-closeLine"></span>
+                     </div>
+                </div>
+                <a href="#" class="cart_item-bottomLink">
+                    <span class="bottom_linkText">Check Out    •    </span>
+                    <span class="bottom_linkText _total">$156.58</span>
+               </a>
+            </div>
+        </div>
     </div>
 </body>
 <script>
@@ -208,6 +419,9 @@
     const dayShow = document.querySelectorAll('.dayChoose-item');
     const list = document.querySelector('.dayChoose-list');
     const block = document.querySelector('.deliveryDayChoose');
+    const cartButton = document.querySelector('.addToCart_button');
+    const showCart = document.querySelector('.cart_body');
+    const cartClose = document.querySelector('.cart_header-close');
       for(let i = 0; i <= dayShow.length; i++) {
         dayChoose.addEventListener('click', () => {
             dayShow[i].style.display = 'flex';
@@ -215,6 +429,16 @@
             block.style.alignItems = 'flex-start'
              })
     }
-</script>
+    cartButton.addEventListener('click', () => {
+        showCart.style.display = 'flex';
+        showCart.style.position = 'absolute';
+        showCart.style.top = '0px';
+        showCart.style.right = '0px';
+        showCart.style.background = 'white';
+    });
+    cartClose.addEventListener('click', () => {
+        showCart.style.display = 'none'
+    })
+   </script>
 
 </html>
